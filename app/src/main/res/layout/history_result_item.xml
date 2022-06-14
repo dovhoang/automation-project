@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="item"
+            type="viet.hoang.automationproject.models.ResultHistory" />
+    </data>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="7">
+    <TextView
+        android:id="@+id/date"
+        android:text="@{item.date.toLocaleString()}"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"/>
+    <TextView
+        android:id="@+id/nsx"
+        android:text="@{item.nsx}"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
+    <TextView
+        android:id="@+id/hsd"
+        android:text="@{item.hsd}"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
+</LinearLayout>
+</layout>
